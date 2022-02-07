@@ -1,5 +1,6 @@
 import 'package:simple_chatting_app/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:simple_chatting_app/screens/sign_in_page.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -34,13 +35,12 @@ class WelcomeScreen extends StatelessWidget {
             const Spacer(flex: 3),
             FittedBox(
               child: TextButton(
-                  // onPressed: () => Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //         builder: (context) => SigninOrSignupScreen(),
-                  //       ),
-                  //     ),
-                  onPressed: () {},
+                  onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SigninOrSignupScreen(),
+                        ),
+                      ),
                   child: Row(
                     children: [
                       Text(
